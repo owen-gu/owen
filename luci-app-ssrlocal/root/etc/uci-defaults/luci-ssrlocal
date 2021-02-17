@@ -1,0 +1,12 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@ssrlocal[-1]
+	add ucitrack ssrlocal
+	set ucitrack.@ssrlocal[-1].init=ssrlocal
+	commit ucitrack
+EOF
+
+
+rm -f /tmp/luci-indexcache
+exit 0

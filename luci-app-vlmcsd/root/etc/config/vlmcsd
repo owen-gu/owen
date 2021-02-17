@@ -1,0 +1,7 @@
+
+config vlmcsd
+	option port '1688'
+	option ato_act 'disable'
+	option use_conf_file '0'
+	option enable '0'
+

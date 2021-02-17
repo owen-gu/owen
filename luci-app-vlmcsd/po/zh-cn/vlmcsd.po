@@ -1,0 +1,76 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Running"
+msgstr "运行中"
+
+msgid "Not running"
+msgstr "未运行"
+
+msgid "Key Management Service"
+msgstr "密匙管理服务器"
+
+msgid "KMS"
+msgstr "KMS服务器"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Basic Settings"
+msgstr "基本设置"
+
+msgid "enable"
+msgstr "启用"
+
+msgid "disable"
+msgstr "禁用"
+
+msgid "Empty Log File"
+msgstr "清空日志"
+
+msgid "Every"
+msgstr "每"
+
+msgid "Sun"
+msgstr "周日"
+
+msgid "Mon"
+msgstr "周一"
+
+msgid "Tue"
+msgstr "周二"
+
+msgid "Wed"
+msgstr "周三"
+
+msgid "Thu"
+msgstr "周四"
+
+msgid "Fri"
+msgstr "周五"
+
+msgid "Sat"
+msgstr "周六"
+
+msgid "days"
+msgstr "天"
+
+msgid "Use config file"
+msgstr "使用配置文件"
+
+msgid "Auto Activation"
+msgstr "自动激活"
+
+msgid "Local Port"
+msgstr "本地端口"
+
+msgid "config"
+msgstr "配置"
+
+msgid "Log"
+msgstr "日志"
+
+msgid "Each line of the beginning of the numeric sign (#) or semicolon (;) is treated as a comment, removing the semicolon (;) to enable the option."
+msgstr "开头数字符号（＃）或分号（;）的每一行被视为注释，去除分号（;）启用选项。"
+
+
