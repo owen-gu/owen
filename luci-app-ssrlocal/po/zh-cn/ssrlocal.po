@@ -1,0 +1,53 @@
+msgid "ShadowsocksR Socks5 Proxy that help you get through firewalls on your router"
+msgstr "绕过防火墙的快速隧道代理"
+
+msgid "Not running"
+msgstr "未运行"
+
+msgid "Running"
+msgstr "运行中"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Server Address"
+msgstr "服务器地址"
+
+msgid "Server Port"
+msgstr "服务器端口"
+
+msgid "Local Port"
+msgstr "本地端口"
+
+msgid "Obfs"
+msgstr "混淆"
+
+msgid "Encryption Method"
+msgstr "加密方法"
+
+msgid "Timeout"
+msgstr "超时"
+
+msgid "Protocol"
+msgstr "协议"
+
+msgid "Protocol Param"
+msgstr "协议参数(可选)"
+
+msgid "leave it empty is well"
+msgstr "一般不填写"
+
+msgid "Obfs Param"
+msgstr "混淆参数(可选)"
+
+
+
+
+
+ 

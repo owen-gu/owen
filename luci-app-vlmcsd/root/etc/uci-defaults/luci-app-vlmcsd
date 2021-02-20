@@ -1,0 +1,13 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@vlmcsd[-1]
+	add ucitrack vlmcsd
+	set ucitrack.@vlmcsd[-1].init=vlmcsd
+	commit ucitrack
+EOF
+
+/etc/init.d/vlmcsd enable
+
+rm -f /tmp/luci-indexcache
+exit 0
