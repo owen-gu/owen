@@ -256,3 +256,6 @@ msgstr "最小数据包大小 :MPU（byte) 以太网中需要>0"
 msgid "Which linklayer adaptation mechanism to use; for testing only"
 msgstr "链路适应机制（仅用于测试）"
 
+msgid "Docker"
+msgstr "容器"
+
