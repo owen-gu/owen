@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI Support for shadowsocks
-LUCI_DEPENDS:=+shadowsocks
+LUCI_DEPENDS:=
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
