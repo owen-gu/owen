@@ -22,10 +22,10 @@ msgid "Perform PowerOff"
 msgstr "关机"
 
 msgid "Warning: There are unsaved changes that will get lost on shutting down!"
-msgstr "警告：没保存的改动在关机的时候都会丢失！"
+msgstr "警告：没保存的改动在关机时会丢失！"
 
 msgid "Waiting for device..."
-msgstr "设备有点懵，要等一下..."
+msgstr "请等待关机..."
 
 msgid "Router is shutting down..."
-msgstr "正在关机，说啥也不好使了..."
+msgstr "正在关机..."
