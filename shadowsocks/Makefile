@@ -17,8 +17,8 @@ PKG_VERSION:=3.3.5
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/shadowsocks/shadowsocks-libev/releases/tag/v$(PKG_VERSION)
-PKG_HASH:=72d7d9217ce2a8a59dc647e8f1fbbd77f7cd30aa
+PKG_SOURCE_URL:=https://github.com/shadowsocks/shadowsocks-libev/releases/download/v$(PKG_VERSION)
+PKG_HASH:=cfc8eded35360f4b67e18dc447b0c00cddb29cc57a3cec48b135e5fb87433488
 
 PKG_MAINTAINER:=Yousong Zhou <yszhou4tech@gmail.com>
 
