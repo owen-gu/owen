@@ -30,6 +30,7 @@ sed -i 's/services/nas/g'  /usr/lib/lua/luci/view/minidlna_status.htm
 ln -sf /sbin/ip /usr/bin/ip
 ln /usr/bin/ssr-local /usr/bin/ssrlocal
 ln /usr/bin/ss-local /usr/bin/sslocal
+ln /usr/bin/kcptun-client /usr/bin/kcptun
 
 
 sed -i 's#http://downloads.openwrt.org#https://mirrors.cloud.tencent.com/lede#g' /etc/opkg/distfeeds.conf
