@@ -95,7 +95,7 @@ msgid "Backup"
 msgstr "备份"
 
 msgid "Bandwidth Monitor"
-msgstr "带宽"
+msgstr "流量"
 
 msgid "CSV, grouped by IP"
 msgstr "CSV，按 IP 分组"
