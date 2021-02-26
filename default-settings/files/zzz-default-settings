@@ -16,6 +16,13 @@ rm -f /usr/lib/lua/luci/view/admin_status/index/ddns.htm
 rm -f /usr/lib/lua/luci/view/admin_status/index/minidlna.htm
 
 
+
+
+sed -i 's/\"network\"/\"control\"/g' /usr/lib/lua/luci/controller/eqos.lua
+sed -i 's/\"system\"/\"control\"/g' /usr/lib/lua/luci/controller/cpulimit.lua
+
+
+
 ln -sf /sbin/ip /usr/bin/ip
 
 ln /usr/bin/ssr-local /usr/bin/ssrlocal
