@@ -1,12 +1,11 @@
 msgid "Online User"
-msgstr "连接信息"
+msgstr "用户列表"
+
+msgid "speed monitoring"
+msgstr "实时网速监控"
 
 msgid "user online"
-msgstr "联机客户"
+msgstr "客户端"
 
 msgid "speed"
-msgstr "速度"
-
-msgid "Status"
-msgstr "状态"
-
+msgstr "网速监控"
