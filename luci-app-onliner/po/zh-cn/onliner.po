@@ -1,0 +1,12 @@
+msgid "Online User"
+msgstr "连接信息"
+
+msgid "user online"
+msgstr "联机客户"
+
+msgid "speed"
+msgstr "速度"
+
+msgid "Status"
+msgstr "状态"
+
