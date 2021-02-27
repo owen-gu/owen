@@ -8,9 +8,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=sqm-scripts
-PKG_SOURCE_VERSION:=ab567ef870c844918e51239c2cdb34e88a8191be
+PKG_SOURCE_VERSION:=c01d061a49ed2aa51f3b79d123b91b7d253eddc6
 PKG_VERSION:=1.4.1
-PKG_RELEASE:=8
+PKG_RELEASE:=9
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/owen-gu/sqm-scripts
