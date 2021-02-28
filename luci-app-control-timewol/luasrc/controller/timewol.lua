@@ -11,9 +11,7 @@ end
 
 function status()
     local e = {}
-    e.status = luci.sys
-                   .call("cat /etc/crontabs/root |grep etherwake >/dev/null") ==
-                   0
+    e.status = luci.sys.call("cat /etc/crontabs/root |grep etherwake >/dev/null") ==0
     luci.http.prepare_content("application/json")
     luci.http.write_json(e)
 end
