@@ -20,6 +20,9 @@ rm -f /usr/lib/lua/luci/view/admin_status/index/minidlna.htm
 
 sed -i 's/\"network\"/\"control\"/g' /usr/lib/lua/luci/controller/eqos.lua
 sed -i 's/\"system\"/\"control\"/g' /usr/lib/lua/luci/controller/cpulimit.lua
+sed -i 's/\"services\"/\"control\"/g' /usr/lib/lua/luci/controller/wol.lua
+sed -i 's/\"services\"/\"control\"/g' /usr/lib/lua/luci/controller/hd_idle.lua
+sed -i 's/\"system\"/\"control\"/g' /usr/lib/lua/luci/controller/autotimeset.lua
 
 
 
