@@ -45,8 +45,8 @@ local encrypt_methods_ss = {
 	"aes-192-gcm",
 	"aes-256-gcm",
 	"chacha20-ietf-poly1305",
-	"xchacha20-ietf-poly1305",
-	-- stream
+	"xchacha20-ietf-poly1305"
+	--[[ stream
 	"table",
 	"rc4",
 	"rc4-md5",
@@ -62,17 +62,18 @@ local encrypt_methods_ss = {
 	"camellia-256-cfb",
 	"salsa20",
 	"chacha20",
-	"chacha20-ietf"
+	"chacha20-ietf" ]]
 }
 
 local encrypt_methods_v2ray_ss = {
 	-- xray_ss
 	"none",
 	"plain",
+	--[[ stream
 	"aes-128-cfb",
 	"aes-256-cfb",
 	"chacha20",
-	"chacha20-ietf",
+	"chacha20-ietf", ]]
 	-- aead
 	"aes-128-gcm",
 	"aes-256-gcm",
@@ -149,7 +150,7 @@ end
 if is_finded("ssr-redir") then
 	o:value("ssr", translate("ShadowsocksR"))
 end
-if is_finded("ss-redir") then
+if is_finded("sslocal") or is_finded("ss-redir") then
 	o:value("ss", translate("Shadowsocks New Version"))
 end
 if is_finded("trojan") then
@@ -256,7 +257,7 @@ o.rmempty = true
 o:depends({type = "v2ray", v2ray_protocol = "shadowsocks"})
 
 -- Shadowsocks Plugin
-o = s:option(ListValue, "plugin", translate("Obfs"))
+o = s:option(Value, "plugin", translate("Obfs"))
 o:value("none", translate("None"))
 if is_finded("obfs-local") then
 	o:value("obfs-local", translate("simple-obfs"))
@@ -512,17 +513,15 @@ o = s:option(Flag, "tls_sessionTicket", translate("Session Ticket"))
 o:depends({type = "trojan", tls = true})
 o.default = "0"
 
--- [[ Trojan TLS ]]--
+-- [[ uTLS ]]--
 o = s:option(ListValue, "fingerprint", translate("Finger Print"))
 o:value("disable", translate("disable"))
 o:value("firefox", translate("firefox"))
 o:value("chrome", translate("chrome"))
-if is_finded("xray") then
-	o:value("safari", translate("safari"))
-	o:value("randomized", translate("random"))
-end
+o:value("safari", translate("safari"))
+o:value("randomized", translate("randomized"))
 o:depends({type = "v2ray", tls = true})
-o.default = "firefox"
+o.default = "disable"
 
 o = s:option(Value, "tls_host", translate("TLS Host"))
 o.datatype = "hostname"
