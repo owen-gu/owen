@@ -1,8 +1,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-ssr-plus
-PKG_VERSION:=184
-PKG_RELEASE:=1
+PKG_VERSION:=183
+PKG_RELEASE:=8
 
 define Package/$(PKG_NAME)/conffiles
 /etc/config/shadowsocksr
@@ -14,15 +14,10 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks
 	bool "Include Shadowsocks"
 	default y if i386||x86_64||arm||aarch64
 
-config PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust
-	bool "Include Shadowsocks Rust (AEAD ciphers only)"
-	depends on aarch64||arm||i386||mips||mipsel||x86_64
-	default y if aarch64
-
 config PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_plugin
 	bool "Include Shadowsocks V2ray Plugin"
 	default n
-
+	
 config PACKAGE_$(PKG_NAME)_INCLUDE_Xray
 	bool "Include Xray (V2RAY/Trojan-GO implemented)"
 	default y if i386||x86_64||arm||aarch64
@@ -56,8 +51,6 @@ LUCI_DEPENDS:=+shadowsocksr-libev-alt +ipset +ip-full +iptables-mod-tproxy +dnsm
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks:shadowsocks-libev-ss-local \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks:simple-obfs \
-	+PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust:shadowsocks-rust-sslocal \
-	+PACKAGE_$(PKG_NAME)_INCLUDE_Shadowsocks_Rust:simple-obfs \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_plugin:v2ray-plugin \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Xray:xray-core \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Trojan:trojan \
