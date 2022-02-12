@@ -13,7 +13,6 @@ rm -f /usr/lib/lua/luci/view/admin_status/index/minidlna.htm
 
 ln -sf /sbin/ip /usr/bin/ip
 ln /usr/bin/ssr-local /usr/bin/ssrlocal
-ln /usr/bin/kcptun-client /usr/bin/kcptun
 
 
 sed -i '/immortalwrt_luci/ { s/snapshots/releases\/18.06.9/g; }'  /etc/opkg/distfeeds.conf
