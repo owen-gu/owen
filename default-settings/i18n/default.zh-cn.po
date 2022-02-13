@@ -31,6 +31,8 @@ msgstr "运行中"
 msgid "NOT RUNNING"
 msgstr "未运行"
 
+
+
 msgid "ZRam Settings"
 msgstr "ZRam 设置"
 
@@ -52,12 +54,6 @@ msgstr "用于压缩内存数据的CPU并发线程数"
 msgid "Swap"
 msgstr "虚拟内存"
 
-msgid "Base Setting"
-msgstr "基本设置"
-
-msgid "Log"
-msgstr "日志"
-
 msgid "Force 40MHz mode"
 msgstr "强制 40MHz 频宽"
 
@@ -78,3 +74,4 @@ msgstr "容器"
 
 msgid "NAS"
 msgstr "存储"
+
