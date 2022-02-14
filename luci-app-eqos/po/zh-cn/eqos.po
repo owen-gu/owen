@@ -14,7 +14,7 @@ msgid "EQoS"
 msgstr "限速控制"
 
 msgid "eqos"
-msgstr "内网限速"
+msgstr "上网限速"
 
 msgid "Comment"
 msgstr "注解"
