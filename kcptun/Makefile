@@ -13,7 +13,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/xtaci/kcptun/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=0821b61b92041b764a1d621f750c1c693d913eed43051d3c109bd303d8f02472
+PKG_HASH:=f6a08f0fe75fa85d15f9c0c28182c69a5ad909229b4c230a8cbe38f91ba2d038
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE.md
@@ -36,7 +36,6 @@ define Package/kcptun/Default
   define Package/kcptun-$(1)
     SECTION:=net
     CATEGORY:=Network
-    SUBMENU:=Web Servers/Proxies
     DEPENDS:=$$(GO_ARCH_DEPENDS)
     TITLE:=Simple UDP Tunnel Based On KCP ($1)
     URL:=https://github.com/xtaci/kcptun
@@ -52,7 +51,7 @@ define Package/kcptun/Default
 	$$(call GoPackage/Package/Install/Bin,$$(PKG_INSTALL_DIR))
 
 	$$(INSTALL_DIR) $$(1)/usr/bin
-	$$(INSTALL_BIN) $$(PKG_INSTALL_DIR)/usr/bin/$(1) $$(1)/usr/bin/kcptun-$(1)
+	$$(INSTALL_BIN) $$(PKG_INSTALL_DIR)/usr/bin/$(1) $$(1)/usr/bin/kcptun
   endef
 endef
 
