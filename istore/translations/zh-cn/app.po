@@ -372,6 +372,3 @@ msgstr "官网"
 #: src/components/app/index.vue:223
 msgid "you have already liked"
 msgstr "您已经点赞过啦"
-
-msgid "iStore"
-msgstr "商店"
