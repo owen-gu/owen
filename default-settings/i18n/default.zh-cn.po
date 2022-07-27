@@ -75,3 +75,10 @@ msgstr "容器"
 msgid "NAS"
 msgstr "存储"
 
+
+msgid "iStore"
+msgstr "商店"
+
+
+
+
