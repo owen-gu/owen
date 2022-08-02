@@ -1,3 +1,5 @@
+es (49 sloc)  1.72 KB
+
 #
 # Copyright (C) 2019-2020 Xingwang Liao
 #
@@ -8,12 +10,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=kcptun
-PKG_VERSION:=20220628
+PKG_VERSION:=20210103
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/xtaci/kcptun/tags/v$(PKG_VERSION)?
-PKG_HASH:=2c3793aafa5dd7ab3cccfc61fbe22a2677da26cf
+PKG_SOURCE_URL:=https://codeload.github.com/xtaci/kcptun/tar.gz/v$(PKG_VERSION)?
+PKG_HASH:=0821b61b92041b764a1d621f750c1c693d913eed43051d3c109bd303d8f02472
+
+
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE.md
